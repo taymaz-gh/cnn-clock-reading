@@ -35,14 +35,7 @@ The dataset contains 18,000 clock images with hour and minute labels. Images var
 
 A task-specific circular error metric is used:
 
-\[
-\mathrm{Error}
-=
-\min\left(
-|T_{\mathrm{true}}-T_{\mathrm{pred}}|,
-720-|T_{\mathrm{true}}-T_{\mathrm{pred}}|
-\right),
-\]
+**Circular error:** $E=\min(|T_{\mathrm{true}}-T_{\mathrm{pred}}|,\ 720-|T_{\mathrm{true}}-T_{\mathrm{pred}}|)$
 
 where time is represented in minutes over a 12-hour cycle.
 
